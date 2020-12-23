@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
 Simple application to learn context-api of react.
-![Mobile UI](screenshots/Mobile UI.jpg?raw=true)
-![Alt text](screenshots/Website UI.jpg?raw=true)
+![Mobile UI](https://github.com/balaji043/movie-context-app/blob/master/screenshots/Mobile%20UI.jpg?raw=true)
+![Alt text](https://github.com/balaji043/movie-context-app/blob/master/screenshots/Website%20UI.jpg?raw=true)
 
 ## Available Scripts
 
