@@ -1,0 +1,26 @@
+:root {
+  --clr-graylight: #faf2f6;
+  --clr-graymed: #78909c;
+  --clr-graydark: #37474f;
+  --clr-primary: #fe528a;
+  --clr-primaryhover: #fce4ec;
+  --clr-primaryfocus: #f48fb1;
+  --clr-primarydark: #6b2b5e;
+  --radius: 0.5rem;
+  --padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: var(--clr-graydark);
+  overflow: hidden;
+}

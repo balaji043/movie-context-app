@@ -1,0 +1,127 @@
+.nav-bar {
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.app-content-container {
+  display: flex;
+  @media (min-height: 700px) {
+    flex-direction: column;
+  }
+}
+
+.movie-wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  flex-grow: 1;
+  max-height: 91vh;
+  overflow-x: auto;
+}
+
+.movie-container {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-graylight);
+  background-color: rgba(226, 219, 219, 0.651);
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin: 0.5rem;
+  color: var(--clr-black);
+  max-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 8rem;
+}
+
+.movie-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.movie-price {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.movie-form {
+  background: white;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 6rem auto;
+  @media (min-height: 700px) {
+    margin: 0rem auto;
+  }
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-input {
+  border: none;
+  background-color: var(--clr-graylight);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: 250ms all ease-in;
+}
+
+.form-input:hover {
+  border: 1px solid var(--clr-primaryhover);
+  box-shadow: 0 0 5px var(--clr-primaryhover);
+  background: white;
+}
+
+.form-input:focus {
+  border: 1px solid var(--clr-primaryfocus);
+  box-shadow: 0 0 5px var(--clr-primaryhover);
+  background: white;
+}
+
+.form-input::placeholder {
+  color: var(--clr-graymed);
+}
+
+.btn-primary {
+  border: none;
+  background: var(--clr-primary);
+  color: white;
+  border-radius: var(--radius);
+  padding: var(--padding);
+  margin-top: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  width: 16rem;
+  cursor: pointer;
+  transition: 250ms all ease-in;
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primarydark);
+}
