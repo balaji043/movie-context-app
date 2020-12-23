@@ -11,7 +11,7 @@
 
 .app-content-container {
   display: flex;
-  @media (min-height: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 }
@@ -23,12 +23,15 @@
   flex-grow: 1;
   max-height: 91vh;
   overflow-x: auto;
+  @media (max-width: 700px) {
+    max-height: 40vh;
+  }
 }
 
 .movie-container {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px var(--clr-graylight);
-  background-color: rgba(226, 219, 219, 0.651);
+  background-color: var(--clr-blue);
   text-align: center;
   border-radius: 1rem;
   position: relative;
@@ -53,13 +56,13 @@
 }
 
 .movie-form {
-  background: white;
   width: 20rem;
   padding: 2rem;
   border-radius: var(--radius);
-  margin: 6rem auto;
-  @media (min-height: 700px) {
-    margin: 0rem auto;
+  margin: 6rem 3rem;
+  background-color: var(--clr-violet);
+  @media (max-width: 700px) {
+    margin: 1rem auto;
   }
 }
 
@@ -75,7 +78,7 @@
 }
 
 .form-label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0.2rem;
 }
 
