@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple application to learn context-api of react.
+![Mobile UI](screenshots/Mobile UI.jpg?raw=true)
+![Alt text](screenshots/Website UI.jpg?raw=true)
 
 ## Available Scripts
 
